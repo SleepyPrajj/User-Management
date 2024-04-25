@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  width: 100%;
+}
+header{
+  font-weight: bold;
+  font-size: larger;
+  color: #ebeef1;
+  /* Add your background pattern here */
+  /* background-color: lightblue; */
+  /* background-image: radial-gradient(black 55%, #0000), */
+    /* radial-gradient(black 55%, #0000), */
+  background: linear-gradient(to bottom, #1e2126, #17191c); 
+  background-size: 100% 0.5%, contain;
+  /* background-blend-mode: hard-light; */
+  /* background-position: 0 0, 1em 1em, 0 0; */
+
+}
+body{
+  /* background: radial-gradient(circle at 24.1% 68.8%, rgb(29, 29, 29) 0%, rgb(0, 0, 0) 99.4%); */
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom, #ff7f0e, #20c997); Complementary Gradient */
+  /* background: linear-gradient(to bottom, #428bca, #5bc0de); */
+  background: linear-gradient(to bottom, #333 0%, #111 100%);
+
+  min-height: 100vh; /* Ensure background covers entire viewport */
+  margin: 0;
+  /* Add your background pattern here */
+  color: #ebeef1;
+  /* background-color: lightblue; */
+  /* background-image: radial-gradient(black 55%, #0000),
+    /* radial-gradient(black 55%, #0000), */
+      /* linear-gradient(
+        135deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        indigo,
+        deeppink
+      */
+  /* background-size: 100% 0.5%, contain; */
+  /* background-blend-mode: hard-light; */
+  /* background-position: 0 0, 1em 1em, 0 0; */
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
